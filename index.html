@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Free Mortgage Assessment — Aussiewide Financial Services</title>
+  <meta name="description" content="Answer a few quick questions and get a personalised mortgage assessment, plus a free strategy call with a local broker. Takes 60 seconds." />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  </script>
+  <script src="config.js"></script>
+  <script>
+    if (typeof CONFIG !== 'undefined' && CONFIG.metaPixelId) {
+      fbq('init', CONFIG.metaPixelId);
+      fbq('track', 'PageView');
+    }
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=370020886926613&ev=PageView&noscript=1" />
+  </noscript>
+</head>
+<body>
+
+  <div
+    id="quiz-overlay"
+    class="quiz-overlay is-open"
+    role="main"
+    aria-label="Free mortgage assessment"
+  >
+
+    <!-- Quiz header -->
+    <div class="quiz-header">
+      <div class="quiz-header__top">
+
+        <!-- Back button — lives in header so it's always visible -->
+        <button class="back-btn" id="back-btn" type="button" aria-label="Go back to previous question">
+          <svg class="back-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="back-btn__label">Back</span>
+        </button>
+
+        <a class="logo" href="#" aria-label="Aussiewide Financial Services">
+          <img
+            src="https://aussiewidefs.com.au/wp-content/uploads/2024/06/Aussiewide-Financial-Services-Logo.png"
+            alt="Aussiewide Financial Services"
+            class="logo__img"
+            height="38"
+          />
+        </a>
+
+        <span class="quiz-step-label" id="step-label" aria-live="polite">1% complete</span>
+
+      </div>
+
+      <!-- Progress bar -->
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Quiz body — questions render here -->
+    <div class="quiz-body" id="quiz-body">
+      <div class="quiz-body__inner" id="question-area">
+        <!-- Dynamic content injected by quiz.js -->
+      </div>
+    </div>
+
+    <!-- Reassurance bar -->
+    <div class="quiz-reassurance" id="quiz-footer">
+      <span>🔒 Private &amp; secure — your information is never shared</span>
+    </div>
+
+  </div>
+
+  <script src="quiz.js"></script>
+
+</body>
+</html>
