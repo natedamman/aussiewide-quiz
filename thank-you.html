@@ -55,28 +55,12 @@
   <main>
 
     <!-- =========================================================
-         THANK YOU HERO
+         PERSONALISED RESULTS — rendered by results.js
          ========================================================= -->
-    <section class="ty-hero" aria-labelledby="ty-headline">
+    <section class="results-section" id="results-section" aria-label="Your personalised results">
+      <!-- Content injected by results.js -->
       <div class="container container--narrow">
-
-        <div class="ty-hero__eyebrow">
-          <span aria-hidden="true">✅</span>
-          Assessment complete
-        </div>
-
-        <h1 id="ty-headline">
-          Your results are ready, <span id="ty-name">let's talk.</span>
-        </h1>
-
-        <p class="ty-hero__sub" id="ty-sub">
-          An Aussiewide broker will review your answers before your call — so you're not starting from scratch.
-        </p>
-
-        <p class="ty-hero__trust">
-          Aussiewide has been helping Australians since 1998 — 1,503+ Google reviews, 4.9 stars.
-        </p>
-
+        <p class="results-loading">Preparing your results…</p>
       </div>
     </section>
 
@@ -201,6 +185,7 @@
        THANK YOU PAGE SCRIPT
        ========================================================= -->
   <script src="config.js"></script>
+  <script src="results.js"></script>
   <script>
     /* ----------------------------------------------------------
        Meta pixel backup Lead event on page load
